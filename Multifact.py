@@ -12,20 +12,21 @@ class Multifactor():
             oddeven=num
         return oddeven
     
-    def Elegible():
-        gender=input("Your Gender:")
-        age=int(input("age:"))
-        if(gender=="Male"):
-            if(age>=21):
-                print("Eligible")
-            else:  
-                print("Not Eligible")
-                if(gender=="Female"):   
-                    if(age>=18):
-                          print("Eligible")
-        else:
-            print("Not Eligible")
-        
+     def Elegible():
+            gender=input("Your Gender:")
+            age=int(input("Your age:"))
+            if gender=="Male": 
+                if age>=21:
+                    print("Eligible")
+                else:  
+                    print("Not Eligible")
+            elif gender=="Female":    
+                if age>=18:
+                    print("Eligible")
+                else: 
+                    print("Not Eligible")
+
+
     def percentage():
         sub1=int(input("Subject1="))
         sub2=int(input("Subject2="))
